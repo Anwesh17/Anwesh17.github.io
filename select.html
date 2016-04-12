@@ -3,13 +3,21 @@
 
 
 </head>
-<select style="width:50%;height:10%">
+<select style="width:50%;height:10%" class="selectpicker">
 	<option value="one">1</option>
 	<option value="two">2</option>
 	<option value="three">3</option>
 	<option value="four">4</option>
 </select>
+<script>
+	window.onload = function() {
+		$('.selectpicker').selectpicker({
+  			style: 'btn-info',
+  			size: 4
+		});
 
+	}
+</script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
 
